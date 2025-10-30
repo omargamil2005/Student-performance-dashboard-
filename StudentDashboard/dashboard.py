@@ -1,5 +1,3 @@
-# Student Performance Dashboard (Deployable Version)
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -241,3 +239,4 @@ st.subheader("Download Filtered Data")
 csv = filtered.to_csv(index=False).encode("utf-8")
 st.download_button("Download CSV", data=csv,
                    file_name="filtered_student_performance.csv", mime="text/csv")
+
